@@ -1,9 +1,21 @@
+import java.util.ArrayList;
+
 public class 数组中出现次数超过一半的数字 {
     public static void main(String[] args) {
         数组中出现次数超过一半的数字 res = new 数组中出现次数超过一半的数字();
         int[] array = {1,2,3,2,2,2,2,2,4};
         int s =res.MoreThanHalfNum_Solution1(array);
-        System.out.println(s);
+        String m = "ok";
+        String t = new String("ok");
+        System.out.println("equals:"+t.equals(m));
+        System.out.println("class:"+t+m);
+        //==表示的是是否指向同一个对象，也就是引用同一个对象
+        System.out.println("class:"+t.getClass().toString()+" ; "+m.getClass().getName());
+        System.out.println("hashcode:"+"t:"+t.hashCode()+"; m:"+m.hashCode());
+        //System.out.println(s);
+        ArrayList<Object> list = new ArrayList<>();
+        list.trimToSize();
+        Object[] o =list.toArray();
     }
     public int MoreThanHalfNum_Solution(int [] array) {
         if(array.length == 0){
